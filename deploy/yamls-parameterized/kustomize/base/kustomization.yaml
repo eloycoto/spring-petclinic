@@ -1,0 +1,4 @@
+resources:
+  - spring-petclinic-deployment.yaml
+  - spring-petclinic-service.yaml
+  - wf--58c1aa12-ingress.yaml
