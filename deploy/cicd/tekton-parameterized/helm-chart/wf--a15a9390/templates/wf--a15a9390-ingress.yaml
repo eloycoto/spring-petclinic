@@ -1,0 +1,25 @@
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+    creationTimestamp: null
+    labels:
+        move2kube.konveyor.io/service: wf--a15a9390
+    name: wf--a15a9390
+spec:
+    rules:
+        - host: localhost
+          http:
+            paths:
+                - backend:
+                    service:
+                        name: el-wf--a15a9390-git-repo
+                        port:
+                            name: port-8080
+                  path: /el-wf--a15a9390-git-repo
+                  pathType: Prefix
+status:
+    loadBalancer: {}
+
+...

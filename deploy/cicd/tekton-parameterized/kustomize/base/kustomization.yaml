@@ -1,0 +1,12 @@
+resources:
+  - wf--a15a9390-ingress.yaml
+  - wf--a15a9390-run-clone-build-push-triggertemplate.yaml
+  - wf--a15a9390-tekton-triggers-admin-rolebinding.yaml
+  - wf--a15a9390-git-repo-eventlistener.yaml
+  - wf--a15a9390-git-repo-github-com-secret.yaml
+  - wf--a15a9390-image-registry-secret.yaml
+  - wf--a15a9390-tekton-triggers-admin-role.yaml
+  - wf--a15a9390-tekton-triggers-admin-serviceaccount.yaml
+  - wf--a15a9390-clone-build-push-pipeline.yaml
+  - wf--a15a9390-clone-push-serviceaccount.yaml
+  - wf--a15a9390-git-event-triggerbinding.yaml
