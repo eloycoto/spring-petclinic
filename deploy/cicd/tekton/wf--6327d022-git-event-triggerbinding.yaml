@@ -1,0 +1,7 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: TriggerBinding
+metadata:
+  creationTimestamp: null
+  name: wf--6327d022-git-event
+spec: {}
+status: {}

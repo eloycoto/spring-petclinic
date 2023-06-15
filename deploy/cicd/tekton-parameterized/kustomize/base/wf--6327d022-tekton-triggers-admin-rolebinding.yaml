@@ -1,0 +1,16 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+    creationTimestamp: null
+    name: wf--6327d022-tekton-triggers-admin
+roleRef:
+    apiGroup: rbac.authorization.k8s.io
+    kind: Role
+    name: wf--6327d022-tekton-triggers-admin
+subjects:
+    - kind: ServiceAccount
+      name: wf--6327d022-tekton-triggers-admin
+
+...

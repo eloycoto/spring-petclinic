@@ -1,0 +1,17 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: EventListener
+metadata:
+  creationTimestamp: null
+  name: wf--6327d022-git-repo
+spec:
+  namespaceSelector: {}
+  resources: {}
+  serviceAccountName: wf--6327d022-tekton-triggers-admin
+  triggers:
+    - bindings:
+        - ref: wf--6327d022-git-event
+      template:
+        ref: wf--6327d022-run-clone-build-push
+status:
+  configuration:
+    generatedName: ""
