@@ -1,0 +1,26 @@
+[
+  {
+    "name": "petclinic-application",
+    "path": "src/main/java/org/springframework/samples/petclinic and src/main/resources",
+    "description": "Java 17 Spring Boot 3.1 web application providing the PetClinic user interface and HTTP endpoints for owners, pets, visits, veterinarians, validation, caching, and actuator operations.",
+    "technology": "Ansible"
+  },
+  {
+    "name": "database-runtime",
+    "path": "src/main/resources/application.properties, src/main/resources/application-mysql.properties, src/main/resources/application-postgres.properties",
+    "description": "Configures database runtime modes for the in-memory H2 database and persistent MySQL or PostgreSQL profiles, including datasource settings and initialization behavior.",
+    "technology": "Ansible"
+  },
+  {
+    "name": "database-schema-and-seed",
+    "path": "src/main/resources/db/h2, src/main/resources/db/mysql, src/main/resources/db/postgres",
+    "description": "Provides vendor-specific SQL schema and seed data used to initialize H2, MySQL, and PostgreSQL databases.",
+    "technology": "Ansible"
+  },
+  {
+    "name": "local-database-compose",
+    "path": "docker-compose.yml",
+    "description": "Orchestrates local MySQL and PostgreSQL database containers for development, including ports, configuration mounts, and database credentials.",
+    "technology": "Ansible"
+  }
+]
